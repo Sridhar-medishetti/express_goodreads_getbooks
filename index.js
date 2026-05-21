@@ -25,5 +25,5 @@ app.get('/books', async (request, response) => {
                   select * from book order by book_id; 
   `
   const booksArray = await db.all(getBooksArray)
-  respone.send(booksArray)
+  response.send(booksArray)
 })
